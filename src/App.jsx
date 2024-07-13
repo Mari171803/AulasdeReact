@@ -1,18 +1,16 @@
-import Header from './Header'
-import TextoLong from './Textin'
-import Botao from './Botao'
+import Dados from "./components/Dados"
+import Principal from "./pages/Principal"
 
 const App = () =>{
-  const nome = 'Marya'
-  const diasemana = 'Sábado'
-  const n1 = 12
-  const n2 = 6
+  const nome = "Maria"
+  const profissao = "Estudante"
+  const idade = 17
+
   return(
-    <div>
-      <Header />
-      <p><TextoLong /></p>
-      <Botao />
-    </div>
+    <>
+      <Principal nome={nome}/>
+      <Dados n={nome} i={idade} p={profissao}/>
+    </>
   )
 }
 
